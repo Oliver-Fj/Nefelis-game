@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game canvas -->
+<canvas id="c"></canvas>
+
+<!-- Gameplay HUD -->
+<div class="hud">
+	<div class="hud__score">
+		<div class="score-lbl"></div>
+		<div class="cube-count-lbl"></div>
+	</div>
+	<div class="pause-btn"><div></div></div>
+	<div class="slowmo">
+		<div class="slowmo__bar"></div>
+	</div>
+</div>
+
+<!-- Menu System -->
+<div class="menus">
+	<div class="menu menu--main">
+		<h1>NEFELI &#128151;</h1>
+		<button type="button" class="play-normal-btn">JUGAR</button>
+		<button type="button" class="play-casual-btn">MODO DEMO</button>
+		<div class="credits">Un Juego por <a href="https://github.com/Oliver-Fj">Oliver Perez</a></div>
+	</div>
+	<div class="menu menu--pause">
+		<h1>Pausa</h1>
+		<button type="button" class="resume-btn">RESUMEN DEL JUEGO</button>
+		<button type="button" class="menu-btn--pause">MENU PRINCIPAL</button>
+	</div>
+	<div class="menu menu--score">
+		<h1>Game Over</h1>
+		<h2>Tu Score:</h2>
+		<div class="final-score-lbl"></div>
+		<div class="high-score-lbl"></div>
+		<button type="button" class="play-again-btn">Jugar de Nuevo</button>
+		<button type="button" class="menu-btn--score">Menu principal</button>
+	</div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
